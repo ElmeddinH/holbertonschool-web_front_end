@@ -19,13 +19,13 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   --color-white: #ffffff;
   --color-grey: #a0a0a0;
   --color-light-grey: #f3f3f3;
-  --color-dark-grey: #353535;
   --color-red: #cd3e65;
   --color-green: #08805b;
+  --color-dark-grey: #353535;
 
-  --text-color: var(--color-black);
   --valid-color: var(--color-green);
   --error-color: var(--color-red);
+  --text-color: var(--color-black);
 
   --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -330,6 +330,8 @@ ul.row {
     ============================= */
 [data-section-theme="dark"] {
   --button-color: var(--color-white);
+  --valid-color: var(--color-green);
+  --error-color: var(--color-red);
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background: var(--color-black);
@@ -741,6 +743,18 @@ textarea:focus {
 .form-group:focus-within .form-help {
   max-height: 20rem;
   margin: .4rem 0 0;
+}
+
+/* Button primary
+    ============================= */
+.button-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.button-primary:hover {
+  color: var(--color-primary);
+  background: var(--color-white);
 }
 
 /* Form error handling
