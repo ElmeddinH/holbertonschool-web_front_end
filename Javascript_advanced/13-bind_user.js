@@ -1,15 +1,16 @@
 var user = {
   hobby: 'Calligraphy',
-  favoritFood: 'Wild Salad',
-  logHobby: function() {
-    console.log('My hobby is ' + this.hobby);
-  },
-  logFavoritFood: function() {
-    console.log('My favorite food is ' + this.favoritFood);
-  }
+  favoriteSport: 'Hockey',
+  astrologicalSign: 'Aries',
+  firstName: 'Guillaume',
+  lastName: 'Johns',
+  location: 'Netherlands',
+  occupation: 'Engineer'
 };
 
-var bindLogHobby = user.logHobby.bind(user);
-var bindLogFavoritFood = user.logFavoritFood.bind(user);
-bindLogHobby();
-bindLogFavoritFood();
+function logWelcomeUser(welcomeString) {
+  console.log(welcomeString + ', ' + this.firstName + '. Your occupation is: ' + this.occupation);
+}
+
+var bindLogWelcomeUser = logWelcomeUser.bind(user);
+bindLogWelcomeUser('Welcome');
