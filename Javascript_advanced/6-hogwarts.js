@@ -1,4 +1,4 @@
-var studentHogwarts = (function() {
+function studentHogwarts() {
   var privateScore = 0;
   var name = null;
 
@@ -20,13 +20,20 @@ var studentHogwarts = (function() {
       return name + ': ' + privateScore;
     }
   };
-})();
+}
 
-studentHogwarts.setName('Harry');
-studentHogwarts.rewardStudent();
-studentHogwarts.rewardStudent();
-studentHogwarts.rewardStudent();
-studentHogwarts.rewardStudent();
-console.log(studentHogwarts.getScore());
-studentHogwarts.penalizeStudent();
-console.log(studentHogwarts.getScore());
+var harry = studentHogwarts();
+harry.setName('Harry');
+harry.rewardStudent();
+harry.rewardStudent();
+harry.rewardStudent();
+harry.rewardStudent();
+console.log(harry.getScore());
+
+var draco = studentHogwarts();
+draco.setName('Draco');
+draco.rewardStudent();
+draco.penalizeStudent();
+draco.penalizeStudent();
+draco.penalizeStudent();
+console.log(draco.getScore());
