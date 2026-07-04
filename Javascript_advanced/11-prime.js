@@ -16,8 +16,8 @@ function countPrimeNumbers() {
   return count;
 }
 
-var t0 = Date.now();
 setTimeout(function() {
+  var t0 = Date.now();
   for (var i = 0; i < 100; i++) {
     countPrimeNumbers();
   }
