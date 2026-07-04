@@ -12,7 +12,7 @@ function main() {
   console.log('Processing orders');
   processOrder(12321, 10.99);
   processOrder(12322, 12.99);
-  processOrder(12323, 15.0);
+  processOrder(12323, 15);
   console.log('All the orders have been processed');
 }
 main();

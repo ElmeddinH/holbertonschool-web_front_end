@@ -21,3 +21,12 @@ var studentHogwarts = (function() {
     }
   };
 })();
+
+studentHogwarts.setName('Harry');
+studentHogwarts.rewardStudent();
+studentHogwarts.rewardStudent();
+studentHogwarts.rewardStudent();
+studentHogwarts.rewardStudent();
+console.log(studentHogwarts.getScore());
+studentHogwarts.penalizeStudent();
+console.log(studentHogwarts.getScore());
