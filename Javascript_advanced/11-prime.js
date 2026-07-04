@@ -16,10 +16,11 @@ function countPrimeNumbers() {
   return count;
 }
 
-var t0 = performance.now();
+var t0 = Date.now();
 setTimeout(function() {
   for (var i = 0; i < 100; i++) {
     countPrimeNumbers();
   }
-  console.log('Execution time of calculating prime numbers 100 times was ' + (performance.now() - t0) + ' milliseconds.');
+  var t1 = Date.now();
+  console.log('Execution time of calculating prime numbers 100 times was ' + (t1 - t0) + ' milliseconds.');
 }, 0);
