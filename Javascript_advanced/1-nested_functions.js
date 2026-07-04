@@ -1,13 +1,15 @@
 var globalVariable = 'Welcome';
 
 function outer() {
+  alert(globalVariable);
   var course = 'Holberton';
   function inner() {
+    alert(globalVariable + ' ' + course);
     var exclamation = '!';
-    function innest() {
+    function inception() {
       alert(globalVariable + ' ' + course + exclamation);
     }
-    innest();
+    inception();
   }
   inner();
 }

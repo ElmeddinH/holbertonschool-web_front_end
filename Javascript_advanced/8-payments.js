@@ -15,5 +15,4 @@ function main() {
   processOrder(12323, 15.0);
   console.log('All the orders have been processed');
 }
-
 main();
